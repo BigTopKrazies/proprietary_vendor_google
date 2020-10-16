@@ -512,14 +512,6 @@ PRODUCT_COPY_FILES += \
     vendor/google/blueline/proprietary/vendor/etc/sap.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sap.conf \
     vendor/google/blueline/proprietary/vendor/etc/seccomp_policy/codec2.vendor.base.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/codec2.vendor.base.policy \
     vendor/google/blueline/proprietary/vendor/etc/seccomp_policy/codec2.vendor.ext.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/codec2.vendor.ext.policy \
-    vendor/google/blueline/proprietary/vendor/etc/sensors/registry/b1_bmi160_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/registry/b1_bmi160_0.json \
-    vendor/google/blueline/proprietary/vendor/etc/sensors/registry/b1_evt1_bmi160_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/registry/b1_evt1_bmi160_0.json \
-    vendor/google/blueline/proprietary/vendor/etc/sensors/registry/b1_lis2mdl_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/registry/b1_lis2mdl_0.json \
-    vendor/google/blueline/proprietary/vendor/etc/sensors/registry/b1_lis2mdl_0_evt1.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/registry/b1_lis2mdl_0_evt1.json \
-    vendor/google/blueline/proprietary/vendor/etc/sensors/registry/b1_sx932x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/registry/b1_sx932x_0.json \
-    vendor/google/blueline/proprietary/vendor/etc/sensors/registry/b1_sx932x_0_no_pullup.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/registry/b1_sx932x_0_no_pullup.json \
-    vendor/google/blueline/proprietary/vendor/etc/sensors/registry/b1_tmd2725_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/registry/b1_tmd2725_0.json \
-    vendor/google/blueline/proprietary/vendor/etc/sensors/registry/b1_touch_gesture_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/registry/b1_touch_gesture_0.json \
     vendor/google/blueline/proprietary/vendor/etc/sensors/registry/b1c1_bmp380_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/registry/b1c1_bmp380_0.json \
     vendor/google/blueline/proprietary/vendor/etc/sensors/registry/b1c1_camera_vsync_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/registry/b1c1_camera_vsync_0.json \
     vendor/google/blueline/proprietary/vendor/etc/sensors/registry/b1c1_camera_vsync_1.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/registry/b1c1_camera_vsync_1.json \
@@ -531,6 +523,14 @@ PRODUCT_COPY_FILES += \
     vendor/google/blueline/proprietary/vendor/etc/sensors/registry/b1c1_unused_gpio.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/registry/b1c1_unused_gpio.json \
     vendor/google/blueline/proprietary/vendor/etc/sensors/registry/bmi160_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/registry/bmi160_0.json \
     vendor/google/blueline/proprietary/vendor/etc/sensors/registry/bmp380_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/registry/bmp380_0.json \
+    vendor/google/blueline/proprietary/vendor/etc/sensors/registry/c1_bmi160_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/registry/c1_bmi160_0.json \
+    vendor/google/blueline/proprietary/vendor/etc/sensors/registry/c1_lis2mdl_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/registry/c1_lis2mdl_0.json \
+    vendor/google/blueline/proprietary/vendor/etc/sensors/registry/c1_lis2mdl_0_proto.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/registry/c1_lis2mdl_0_proto.json \
+    vendor/google/blueline/proprietary/vendor/etc/sensors/registry/c1_proto_bmi160_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/registry/c1_proto_bmi160_0.json \
+    vendor/google/blueline/proprietary/vendor/etc/sensors/registry/c1_sx932x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/registry/c1_sx932x_0.json \
+    vendor/google/blueline/proprietary/vendor/etc/sensors/registry/c1_sx932x_0_no_pullup.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/registry/c1_sx932x_0_no_pullup.json \
+    vendor/google/blueline/proprietary/vendor/etc/sensors/registry/c1_tmd2725_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/registry/c1_tmd2725_0.json \
+    vendor/google/blueline/proprietary/vendor/etc/sensors/registry/c1_touch_gesture_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/registry/c1_touch_gesture_0.json \
     vendor/google/blueline/proprietary/vendor/etc/sensors/registry/lis2mdl_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/registry/lis2mdl_0.json \
     vendor/google/blueline/proprietary/vendor/etc/sensors/registry/sns_basic_gestures.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/registry/sns_basic_gestures.json \
     vendor/google/blueline/proprietary/vendor/etc/sensors/registry/sns_cm.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/registry/sns_cm.json \

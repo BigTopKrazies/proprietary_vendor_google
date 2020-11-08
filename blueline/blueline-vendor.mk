@@ -512,6 +512,14 @@ PRODUCT_COPY_FILES += \
     vendor/google/blueline/proprietary/vendor/etc/sap.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sap.conf \
     vendor/google/blueline/proprietary/vendor/etc/seccomp_policy/codec2.vendor.base.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/codec2.vendor.base.policy \
     vendor/google/blueline/proprietary/vendor/etc/seccomp_policy/codec2.vendor.ext.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/codec2.vendor.ext.policy \
+    vendor/google/blueline/proprietary/vendor/etc/sensors/registry/b1_bmi160_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/registry/b1_bmi160_0.json \
+    vendor/google/blueline/proprietary/vendor/etc/sensors/registry/b1_evt1_bmi160_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/registry/b1_evt1_bmi160_0.json \
+    vendor/google/blueline/proprietary/vendor/etc/sensors/registry/b1_lis2mdl_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/registry/b1_lis2mdl_0.json \
+    vendor/google/blueline/proprietary/vendor/etc/sensors/registry/b1_lis2mdl_0_evt1.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/registry/b1_lis2mdl_0_evt1.json \
+    vendor/google/blueline/proprietary/vendor/etc/sensors/registry/b1_sx932x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/registry/b1_sx932x_0.json \
+    vendor/google/blueline/proprietary/vendor/etc/sensors/registry/b1_sx932x_0_no_pullup.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/registry/b1_sx932x_0_no_pullup.json \
+    vendor/google/blueline/proprietary/vendor/etc/sensors/registry/b1_tmd2725_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/registry/b1_tmd2725_0.json \
+    vendor/google/blueline/proprietary/vendor/etc/sensors/registry/b1_touch_gesture_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/registry/b1_touch_gesture_0.json \
     vendor/google/blueline/proprietary/vendor/etc/sensors/registry/b1c1_bmp380_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/registry/b1c1_bmp380_0.json \
     vendor/google/blueline/proprietary/vendor/etc/sensors/registry/b1c1_camera_vsync_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/registry/b1c1_camera_vsync_0.json \
     vendor/google/blueline/proprietary/vendor/etc/sensors/registry/b1c1_camera_vsync_1.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/registry/b1c1_camera_vsync_1.json \
@@ -523,14 +531,6 @@ PRODUCT_COPY_FILES += \
     vendor/google/blueline/proprietary/vendor/etc/sensors/registry/b1c1_unused_gpio.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/registry/b1c1_unused_gpio.json \
     vendor/google/blueline/proprietary/vendor/etc/sensors/registry/bmi160_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/registry/bmi160_0.json \
     vendor/google/blueline/proprietary/vendor/etc/sensors/registry/bmp380_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/registry/bmp380_0.json \
-    vendor/google/blueline/proprietary/vendor/etc/sensors/registry/c1_bmi160_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/registry/c1_bmi160_0.json \
-    vendor/google/blueline/proprietary/vendor/etc/sensors/registry/c1_lis2mdl_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/registry/c1_lis2mdl_0.json \
-    vendor/google/blueline/proprietary/vendor/etc/sensors/registry/c1_lis2mdl_0_proto.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/registry/c1_lis2mdl_0_proto.json \
-    vendor/google/blueline/proprietary/vendor/etc/sensors/registry/c1_proto_bmi160_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/registry/c1_proto_bmi160_0.json \
-    vendor/google/blueline/proprietary/vendor/etc/sensors/registry/c1_sx932x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/registry/c1_sx932x_0.json \
-    vendor/google/blueline/proprietary/vendor/etc/sensors/registry/c1_sx932x_0_no_pullup.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/registry/c1_sx932x_0_no_pullup.json \
-    vendor/google/blueline/proprietary/vendor/etc/sensors/registry/c1_tmd2725_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/registry/c1_tmd2725_0.json \
-    vendor/google/blueline/proprietary/vendor/etc/sensors/registry/c1_touch_gesture_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/registry/c1_touch_gesture_0.json \
     vendor/google/blueline/proprietary/vendor/etc/sensors/registry/lis2mdl_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/registry/lis2mdl_0.json \
     vendor/google/blueline/proprietary/vendor/etc/sensors/registry/sns_basic_gestures.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/registry/sns_basic_gestures.json \
     vendor/google/blueline/proprietary/vendor/etc/sensors/registry/sns_cm.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/registry/sns_cm.json \
@@ -1574,6 +1574,7 @@ PRODUCT_PACKAGES += \
     AppDirectedSMSService \
     CarrierServices \
     CarrierSettings \
+    CarrierWifi \
     ConnMO \
     DCMO \
     DMService \
@@ -1610,15 +1611,22 @@ PRODUCT_PACKAGES += \
     manifest_wifi_ext \
     rebootescrow-citadel
 PRODUCT_COPY_FILES += \
+    vendor/google/blueline/proprietary/bin/move_time_data.sh:$(TARGET_COPY_OUT_SYSTEM)/bin/move_time_data.sh \
     vendor/google/blueline/proprietary/etc/permissions/com.qualcomm.qcrilmsgtunnel.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.qualcomm.qcrilmsgtunnel.xml \
     vendor/google/blueline/proprietary/etc/permissions/com.quicinc.cne.CNEService.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.quicinc.cne.CNEService.xml \
     vendor/google/blueline/proprietary/etc/permissions/qcrilhook.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/qcrilhook.xml \
     vendor/google/blueline/proprietary/etc/permissions/telephonyservice.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/telephonyservice.xml \
+    vendor/google/blueline/proprietary/etc/permissions/uimremoteclient.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/uimremoteclient.xml \
+    vendor/google/blueline/proprietary/etc/permissions/uimremoteserver.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/uimremoteserver.xml \
     vendor/google/blueline/proprietary/lib/lib-imsvideocodec.so:$(TARGET_COPY_OUT_SYSTEM)/lib/lib-imsvideocodec.so \
     vendor/google/blueline/proprietary/lib/lib-imsvt.so:$(TARGET_COPY_OUT_SYSTEM)/lib/lib-imsvt.so \
     vendor/google/blueline/proprietary/lib/lib-imsvtextutils.so:$(TARGET_COPY_OUT_SYSTEM)/lib/lib-imsvtextutils.so \
     vendor/google/blueline/proprietary/lib/lib-imsvtutils.so:$(TARGET_COPY_OUT_SYSTEM)/lib/lib-imsvtutils.so \
+    vendor/google/blueline/proprietary/lib/libimscamera_jni.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libimscamera_jni.so \
+    vendor/google/blueline/proprietary/lib/libimsmedia_jni.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libimsmedia_jni.so \
+    vendor/google/blueline/proprietary/lib/libqcbor_system.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libqcbor_system.so \
     vendor/google/blueline/proprietary/lib/librcc.so:$(TARGET_COPY_OUT_SYSTEM)/lib/librcc.so \
+    vendor/google/blueline/proprietary/lib/libsdm-disp-apis.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libsdm-disp-apis.so \
     vendor/google/blueline/proprietary/lib/libsecureui_svcsock_system.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libsecureui_svcsock_system.so \
     vendor/google/blueline/proprietary/lib64/lib-imsvideocodec.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/lib-imsvideocodec.so \
     vendor/google/blueline/proprietary/lib64/lib-imsvt.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/lib-imsvt.so \
@@ -1626,7 +1634,9 @@ PRODUCT_COPY_FILES += \
     vendor/google/blueline/proprietary/lib64/lib-imsvtutils.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/lib-imsvtutils.so \
     vendor/google/blueline/proprietary/lib64/libimscamera_jni.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libimscamera_jni.so \
     vendor/google/blueline/proprietary/lib64/libimsmedia_jni.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libimsmedia_jni.so \
+    vendor/google/blueline/proprietary/lib64/libqcbor_system.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libqcbor_system.so \
     vendor/google/blueline/proprietary/lib64/librcc.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/librcc.so \
+    vendor/google/blueline/proprietary/lib64/libsdm-disp-apis.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libsdm-disp-apis.so \
     vendor/google/blueline/proprietary/lib64/libsecureui_svcsock_system.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libsecureui_svcsock_system.so
 
 PRODUCT_PACKAGES += \
@@ -1635,7 +1645,11 @@ PRODUCT_PACKAGES += \
     datastatusnotification \
     ims \
     uceShimService \
+    uimremoteclient \
+    uimremoteserver \
     CNEService \
     qcrilmsgtunnel \
     QtiTelephonyServicelibrary \
-    qcrilhook
+    qcrilhook \
+    uimremoteclientlibrary \
+    uimremoteserverlibrary

@@ -190,6 +190,7 @@ PRODUCT_COPY_FILES += \
     vendor/google/coral/proprietary/system_ext/etc/permissions/telephonyservice.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/telephonyservice.xml \
     vendor/google/coral/proprietary/system_ext/etc/permissions/uimremoteclient.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/uimremoteclient.xml \
     vendor/google/coral/proprietary/system_ext/etc/permissions/uimremoteserver.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/uimremoteserver.xml \
+    vendor/google/coral/proprietary/system_ext/lib/com.qualcomm.qti.bluetooth_audio@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/com.qualcomm.qti.bluetooth_audio@1.0.so \
     vendor/google/coral/proprietary/system_ext/lib/com.qualcomm.qti.imscmservice@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/com.qualcomm.qti.imscmservice@1.0.so \
     vendor/google/coral/proprietary/system_ext/lib/com.qualcomm.qti.imscmservice@2.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/com.qualcomm.qti.imscmservice@2.0.so \
     vendor/google/coral/proprietary/system_ext/lib/com.qualcomm.qti.imscmservice@2.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/com.qualcomm.qti.imscmservice@2.1.so \
@@ -238,6 +239,7 @@ PRODUCT_COPY_FILES += \
     vendor/google/coral/proprietary/system_ext/lib/vendor.qti.data.factory@2.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.data.factory@2.1.so \
     vendor/google/coral/proprietary/system_ext/lib/vendor.qti.data.slm@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.data.slm@1.0.so \
     vendor/google/coral/proprietary/system_ext/lib/vendor.qti.hardware.alarm@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.alarm@1.0.so \
+    vendor/google/coral/proprietary/system_ext/lib/vendor.qti.hardware.cryptfshw@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.cryptfshw@1.0.so \
     vendor/google/coral/proprietary/system_ext/lib/vendor.qti.hardware.data.cne.internal.api@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.data.cne.internal.api@1.0.so \
     vendor/google/coral/proprietary/system_ext/lib/vendor.qti.hardware.data.cne.internal.constants@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.data.cne.internal.constants@1.0.so \
     vendor/google/coral/proprietary/system_ext/lib/vendor.qti.hardware.data.cne.internal.server@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.data.cne.internal.server@1.0.so \
@@ -272,6 +274,7 @@ PRODUCT_COPY_FILES += \
     vendor/google/coral/proprietary/system_ext/lib/vendor.qti.ims.rcsconfig@1.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.ims.rcsconfig@1.1.so \
     vendor/google/coral/proprietary/system_ext/lib/vendor.qti.imsrtpservice@3.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.imsrtpservice@3.0.so \
     vendor/google/coral/proprietary/system_ext/lib/vendor.qti.latency@2.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.latency@2.0.so \
+    vendor/google/coral/proprietary/system_ext/lib64/com.qualcomm.qti.bluetooth_audio@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/com.qualcomm.qti.bluetooth_audio@1.0.so \
     vendor/google/coral/proprietary/system_ext/lib64/com.qualcomm.qti.imscmservice@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/com.qualcomm.qti.imscmservice@1.0.so \
     vendor/google/coral/proprietary/system_ext/lib64/com.qualcomm.qti.imscmservice@2.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/com.qualcomm.qti.imscmservice@2.0.so \
     vendor/google/coral/proprietary/system_ext/lib64/com.qualcomm.qti.imscmservice@2.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/com.qualcomm.qti.imscmservice@2.1.so \
@@ -322,6 +325,7 @@ PRODUCT_COPY_FILES += \
     vendor/google/coral/proprietary/system_ext/lib64/vendor.qti.data.factory@2.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.data.factory@2.1.so \
     vendor/google/coral/proprietary/system_ext/lib64/vendor.qti.data.slm@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.data.slm@1.0.so \
     vendor/google/coral/proprietary/system_ext/lib64/vendor.qti.hardware.alarm@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.alarm@1.0.so \
+    vendor/google/coral/proprietary/system_ext/lib64/vendor.qti.hardware.cryptfshw@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.cryptfshw@1.0.so \
     vendor/google/coral/proprietary/system_ext/lib64/vendor.qti.hardware.data.cne.internal.api@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.data.cne.internal.api@1.0.so \
     vendor/google/coral/proprietary/system_ext/lib64/vendor.qti.hardware.data.cne.internal.constants@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.data.cne.internal.constants@1.0.so \
     vendor/google/coral/proprietary/system_ext/lib64/vendor.qti.hardware.data.cne.internal.server@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.data.cne.internal.server@1.0.so \
@@ -371,6 +375,7 @@ PRODUCT_PACKAGES += \
     ConnMO \
     DCMO \
     DMService \
+    DevicePersonalizationPrebuiltPixel4 \
     DiagMon \
     DreamlinerPrebuilt \
     DreamlinerUpdater \
@@ -1167,6 +1172,8 @@ PRODUCT_COPY_FILES += \
     vendor/google/coral/proprietary/vendor/lib/libgcs.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgcs.so \
     vendor/google/coral/proprietary/vendor/lib/libgnsspps.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgnsspps.so \
     vendor/google/coral/proprietary/vendor/lib/libgoog_llv_gpu.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgoog_llv_gpu.so \
+    vendor/google/coral/proprietary/vendor/lib/libgooglecamerahal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgooglecamerahal.so \
+    vendor/google/coral/proprietary/vendor/lib/libgooglecamerahalutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgooglecamerahalutils.so \
     vendor/google/coral/proprietary/vendor/lib/libgpu_tonemapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgpu_tonemapper.so \
     vendor/google/coral/proprietary/vendor/lib/libgpudataproducer.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgpudataproducer.so \
     vendor/google/coral/proprietary/vendor/lib/libgralloc.qti.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgralloc.qti.so \

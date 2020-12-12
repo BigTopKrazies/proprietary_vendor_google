@@ -6,7 +6,6 @@
      Confidential and Proprietary - Qualcomm Technologies, Inc.
 -->
 
-
 <!-- QMI configuration -->
 <list name="netmgr_config">
   <!-- Logging overrides for ds_exec() family of commands -->
@@ -2383,6 +2382,7 @@
       <data name="netdev_budget" type="int"> 0 </data>
       <data name="qos_via_idl" type="int"> 1 </data>
       <data name="max_mtu" type="int"> 0 </data>
+      <data name="netmgr_recovery_enabled" type="int"> 1 </data>
       <data name="num_modems" type="int"> 2 </data>
       <list name="modems_enabled">
          <data type="int"> 1 </data> <!-- MODEM_MSM -->
@@ -2580,6 +2580,7 @@
       <data name="netdev_budget" type="int"> 0 </data>
       <data name="qos_via_idl" type="int"> 1 </data>
       <data name="max_mtu" type="int"> 9216 </data>
+      <data name="netmgr_recovery_enabled" type="int"> 1 </data>
       <data name="num_modems" type="int"> 2 </data>
       <list name="modems_enabled">
          <data type="int"> 1 </data> <!-- MODEM_MSM -->
@@ -2693,6 +2694,7 @@
       <data name="low_latency_filters" type="int"> 1 </data>
       <data name="qos_via_idl" type="int"> 1 </data>
       <data name="max_mtu" type="int"> 9216 </data>
+      <data name="netmgr_recovery_enabled" type="int"> 1 </data>
       <data name="num_modems" type="int"> 2 </data>
       <list name="modems_enabled">
       <data type="int"> 1 </data> <!-- MODEM_MSM -->
@@ -2837,6 +2839,7 @@
       <data name="low_latency_filters" type="int"> 1 </data>
       <data name="qos_via_idl" type="int"> 1 </data>
       <data name="max_mtu" type="int"> 9216 </data>
+      <data name="netmgr_recovery_enabled" type="int"> 1 </data>
       <data name="num_modems" type="int"> 2 </data>
       <list name="modems_enabled">
       <data type="int"> 1 </data> <!-- MODEM_MSM -->
@@ -3099,8 +3102,8 @@
       <data name="dataformat_ul_data_aggregation_protocol" type="int"> 9 </data>
       <data name="dataformat_dl_gro_enabled" type="int"> 1 </data>
       <data name="dataformat_ul_gso_enabled" type="int"> 1 </data>
-      <data name="rsc" type="int"> 1 </data>
-      <data name="rsb" type="int"> 1 </data>
+      <data name="rsc" type="int"> 2 </data>
+      <data name="rsb" type="int"> 2 </data>
       <data name="phys_net_dev" type="string"> rmnet_ipa0 </data>
       <data name="rtm_rmnet_data_enabled" type="int"> 1 </data>
       <data name="rmnet_perf" type="int"> 3 </data>
@@ -3115,6 +3118,7 @@
       <data name="vnd_rps_mask" type="int"> 125 </data>
       <data name="qos_via_idl" type="int"> 1 </data>
       <data name="max_mtu" type="int"> 9216 </data>
+      <data name="netmgr_recovery_enabled" type="int"> 1 </data>
       <data name="num_modems" type="int"> 2 </data>
       <list name="modems_enabled">
       <data type="int"> 1 </data> <!-- MODEM_MSM -->
